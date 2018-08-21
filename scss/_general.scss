@@ -13,6 +13,7 @@ img {
 body {
   font-family: "Nanum Pen Script", cursive;
   width: 100%;
+  background-color: $primary-color;
 }
 
 header {
@@ -33,6 +34,20 @@ main {
   @include flex-col;
 
   align-items: center;
+}
+
+a {
+  color: #ae0001;
+
+  &:visited {
+    color: #740001;
+  }
+
+  &:focus,
+  &:hover {
+    color: #d3a625;
+    text-decoration: none;
+  }
 }
 
 p {
@@ -56,6 +71,7 @@ select {
   border-radius: 10px;
   border: 1px solid $solid-black;
   width: 100%;
+  font-family: inherit;
 }
 
 .label-block {
@@ -88,4 +104,16 @@ input[type="radio"],
 input[type="checkbox"] {
   width: auto;
   margin-right: 10px;
+}
+
+footer {
+  @include flex-row;
+
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 0.7em;
+
+  p {
+    margin-top: 4em;
+  }
 }
