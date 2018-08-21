@@ -1,6 +1,110 @@
+/* ----Mixins---- */
+/* ----Variables --- */
 /* ---- General styles ---- */
 *,
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 4em; }
+
+main {
+  font-size: 1.5em;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+p {
+  text-align: justify; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.3em 0; }
+
+fieldset,
+input,
+textarea,
+select {
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 100%; }
+
+.label-block {
+  display: block; }
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+li {
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+select {
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 1px solid #000;
+  width: 100%; }
+
+.reccomend {
+  display: inline-block; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px; }

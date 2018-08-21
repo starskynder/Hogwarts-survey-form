@@ -8,10 +8,97 @@
   <title>Hogwarts Survey Form</title>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nanum+Pen+Script" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="harry.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+  <header>
+    <img src="images/harryedvige5.png" alt="harry and edvige">
+    <h1 id="title">Hogwarts Survey</h1>
+  </header>
+  <main>
+    <p id="description">Dear Witch/Wizard please let us know how to improve Hogwarts school of Magic.</p>
+    <form action="POST" id="survey-form">
+      <fieldset>
+        <legend>Survey</legend>
+        <ul>
+          <li>
+            <label for="name-label" id="name-label" class="label-block">Name:</label>
+            <input type="text" id="name" placeholder="Your name" required>
+          </li>
+          <li>
+            <label for="email" id="email-label" class="label-block">Email:</label>
+            <input type="email" placeholder="E-owl post email" id="email" required>
+          </li>
+          <li>
+            <label for="number" id="number-label" class="label-block">Age (in muggle years):</label>
+            <input type="number" min="1" max="1000" id="number" placeholder="Enter your age">
+          </li>
+          <li>
+            <label for="dropdown" class="label-block"> Which option describes better your current role? </label>
+            <select name="role" id="dropdown">
+              <option value="">Student</option>
+              <option value="">Teacher</option>
+              <option value="">Muggle</option>
+              <option value="">Squib</option>
+              <option value="">Death Eater</option>
+              <option value="">Auror</option>
+              <option value="">You Know Who</option>
+              <option value="">Big Snake</option>
+
+            </select>
+          </li>
+
+          <li class="reccomend">
+            <p>How likely is you would reccomend Hogwarts to other students? </p>
+            <div> <input type="radio" id="yes" name="reccomend" value="yes" checked>
+              <label for="yes">Definitely Yes!</label></div>
+            <div><input type="radio" id="maybe" name="reccomend" value="yes">
+              <label for="maybe">Maybe Yes.</label></div>
+            <div><input type="radio" id="not" name="reccomend" value="maybe">
+              <label for="not">Not so sure...</label></div>
+            <div><input type="radio" id="no" name="reccomend" value="no">
+              <label for="no">No for the nose of Voldy!</label></div>
+
+          </li>
+          <li>
+            <p>
+              What do you like the most in Hogwarts?
+            </p>
+            <div><input type="checkbox" name="likethemost" id="transf" value="transfiguration" checked><label for="transf">Transfiguration</label></div>
+            <div><input type="checkbox" name="likethemost" id="charms" value="charms"><label for="charms">Charms</label></div>
+            <div><input type="checkbox" id="potions" name="likethemost" value="potions"><label for="potions">Potions</label></div>
+            <div><input type="checkbox" name="likethemost" value="history"><label for="history">History of magic</label></div>
+            <div><input type="checkbox" id="defence" name="likethemost" value="defence"><label for="defence">Defence Against
+                the Dark Arts</label></div>
+            <div><input type="checkbox" id="astro" name="likethemost" value="astronomy"><label for="astro">Astronomy</label></div>
+            <div><input type="checkbox" id="herb" name="likethemost" value="herbology"><label for="herb">Herbology</label></div>
+            <div><input type="checkbox" id="quidditch" name="likethemost" value="quidditch"><label for="quidditch">Quidditch</label></div>
+            <div><input type="checkbox" id="hogsmeade" name="likethemost" value="hogsmeade"><label for="hogsmeade">Hogsmeade</label></div>
+
+          </li>
+          <li>
+            <p>Things that should be improved in the future (or now if you have a time-turner) (Check all that apply): </p>
+            <div><input type="checkbox" value="quidditch fields" id="fields" checked><label for="fields">Quidditch Fields</label></div>
+            <div><input type="checkbox" value="potion labs" id="potionlabs"><label for="potionlabs">Potions laboratories</label></div>
+            <div><input type="checkbox" value="greenhouse" id="greenhouse"><label for="greehouse">Herbology's greenhouse</label></div>
+            <div><input type="checkbox" value="hogsmeade meetups" id="meetups"><label for="meetups">Hogsmeade Meetups</label></div>
+            <div><input type="checkbox" value="moaning myrtle" id="myrtle"><label for="myrtle">Moaning Myrtle bathroom</label></div>
+            <div><input type="checkbox" value="hagrid hut" id="hagrid"><label for="">Hagrid's Hut</label></div>
+            <div><input type="checkbox" value="houses common rooms" id="houses"><label for="houses">Houses Common Rooms</label></div>
+            <div><input type="checkbox" value="great hall" id="greathall"><label for="greathall">Great Hall</label></div>
+            <div><input type="checkbox" value="dometic elves" id="elves"><label for="elves">Domestic Elves kitchen</label></div>
+          </li>
+          <li>
+            <p>Any comments or suggestions?</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea></li>
+        </ul>
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+
+  </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>

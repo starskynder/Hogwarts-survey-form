@@ -4,3 +4,88 @@
 ::before {
   box-sizing: border-box;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Nanum Pen Script", cursive;
+  width: 100%;
+}
+
+header {
+  @include flex-col;
+
+  align-items: center;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 4em;
+}
+
+main {
+  font-size: 1.5em;
+  padding: 0.5em;
+
+  @include flex-col;
+
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+}
+
+form {
+  @include flex-col;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.3em 0;
+}
+
+fieldset,
+input,
+textarea,
+select {
+  border-radius: 10px;
+  border: 1px solid $solid-black;
+  width: 100%;
+}
+
+.label-block {
+  display: block;
+}
+
+ul {
+  @include flex-col;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 1em 0;
+
+  @include flex-col;
+}
+
+select {
+  padding: 0.5em;
+}
+
+.reccomend {
+  display: inline-block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}

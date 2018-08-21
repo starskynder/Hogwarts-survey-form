@@ -1,0 +1,10 @@
+/* ----Mixins---- */
+@mixin flex-col {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
