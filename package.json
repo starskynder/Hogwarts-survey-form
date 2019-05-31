@@ -13,5 +13,8 @@
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "tar": "^4.4.8"
   }
 }
